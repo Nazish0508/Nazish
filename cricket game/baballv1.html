@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cricket</title>
+  <link rel="stylesheet" href="batball.css">
+</head>
+<body>
+  <h1 id="head1">Bat Ball Stump Game</h1>
+  <button class="button" onclick="
+  let randomno = Math.random() * 3;
+  let computerchoice
+  if(randomno > 0 && randomno <= 1){
+    computerchoice = 'Bat';
+   // console.log('Computer choice is Bat');
+ } else if(randomno > 1 && randomno <= 2){
+    computerchoice = 'Ball';
+   // console.log('Computer choice is Ball');
+ } else {
+    computerchoice = 'Stump';
+     //console.log('Computer choice is Stump');
+ }
+  let resultmsg;
+ if(computerchoice === 'Ball')
+  {
+    resultmsg = 'User won.';
+  }else if(computerchoice === 'Bat'){
+    resultmsg = `It is a tie`;
+  }else{
+    resultmsg = 'Computer has won';
+  }
+
+  alert(`You have Chosen Bat. Computer choice is ${computerchoice} and ${resultmsg}`);
+ 
+  
+  ">Bat</button>
+
+  <button class="button" onclick="
+  randomno = Math.random() * 3;
+ if(randomno > 0 && randomno <= 1){
+    computerchoice = 'Bat';
+   // console.log('Computer choice is Bat');
+ } else if(randomno > 1 && randomno <= 2){
+    computerchoice = 'Ball';
+   // console.log('Computer choice is Ball');
+ } else {
+    computerchoice = 'Stump';
+     //console.log('Computer choice is Stump');
+ }
+
+ if(computerchoice === 'Ball')
+  {
+    resultmsg = 'It is a tie.';
+  }
+  else if(computerchoice === 'Bat')
+  {
+    resultmsg =`Computer has Won`;
+  }
+  else if(computerchoice === 'Stump')
+  {
+    resultmsg = 'User won';
+  }
+
+  alert(`You have Chosen Ball. Computer choice is ${computerchoice} and ${resultmsg}`);
+  
+  ">Ball</button>
+
+
+  <button class="button" onclick="
+  randomno = Math.random() * 3;
+ if(randomno > 0 && randomno <= 1){
+    computerchoice = 'Bat';
+   // console.log('Computer choice is Bat');
+ } else if(randomno > 1 && randomno <= 2){
+    computerchoice = 'Ball';
+   // console.log('Computer choice is Ball');
+ } else {
+    computerchoice = 'Stump';
+     //console.log('Computer choice is Stump');
+ }
+
+ if(computerchoice === 'Ball')
+  {
+    resultmsg = 'Computer won';
+  }
+  else if(computerchoice === 'Bat')
+  {
+    resultmsg =`User won`;
+  }
+  else if(computerchoice === 'Stump')
+  {
+    resultmsg = 'It is a tie';
+  }
+
+  alert(`You have Chosen Stump. Computer choice is ${computerchoice} and ${resultmsg}`); "
+  
+  >Stump</button>
+</body>
+</html>
